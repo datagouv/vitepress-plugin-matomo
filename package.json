@@ -20,12 +20,14 @@
     "start": "npm run dev",
     "dev": "vite",
     "build": "tsc --noEmit && vite build && tsc --declaration --emitDeclarationOnly",
+    "docs": "api-extractor run --local --verbose",
     "preview": "vite preview",
-    "preversion": "npm run build && vitest run",
+    "preversion": "npm run build && npm run docs",
     "update-version": "npm version --no-git-tag-version",
     "publish-version": "npm publish --access public"
   },
   "devDependencies": {
+    "@microsoft/api-extractor": "^7.34.4",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",

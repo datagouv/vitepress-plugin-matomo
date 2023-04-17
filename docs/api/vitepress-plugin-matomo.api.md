@@ -4,7 +4,7 @@
 
 ```ts
 
-import { Router } from 'vitepress';
+import type { Router } from 'vitepress';
 
 // @public
 function (parameters: Parameters_2): void;
