@@ -45,5 +45,10 @@
     "matomo"
   ],
   "author": "@nicolaskempf57",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://todo.sr.ht/~nicolaskempf57/vitepress-plugin-matomo",
+    "email": "~nicolaskempf57/vitepress-plugin-matomo-devel@lists.sr.ht"
+  },
+  "homepage": "https://sr.ht/~nicolaskempf57/vitepress-plugin-matomo/"
 }
