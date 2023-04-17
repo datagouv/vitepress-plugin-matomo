@@ -20,13 +20,15 @@
     "start": "npm run dev",
     "dev": "vite",
     "build": "tsc --noEmit && vite build && tsc --declaration --emitDeclarationOnly",
-    "docs": "api-extractor run --local --verbose",
+    "docs:extract": "api-extractor run --local --verbose",
+    "docs:generate": "api-documenter markdown --input-folder=tmp --output-folder=docs/pages",
     "preview": "vite preview",
-    "preversion": "npm run build && npm run docs",
+    "preversion": "npm run build && npm run docs:extract && npm run docs:generate",
     "update-version": "npm version --no-git-tag-version",
     "publish-version": "npm publish --access public"
   },
   "devDependencies": {
+    "@microsoft/api-documenter": "^7.21.7",
     "@microsoft/api-extractor": "^7.34.4",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",

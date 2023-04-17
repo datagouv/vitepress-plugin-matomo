@@ -7,20 +7,19 @@
 import type { Router } from 'vitepress';
 
 // @public
-function (parameters: Parameters_2): void;
+function (parameters: IParameters): void;
 export default default_2;
 
-// @public (undocumented)
-interface Parameters_2 {
+// @public
+export interface IParameters {
     enableLinkTracking?: boolean;
+    rememberConsent?: boolean;
+    requireConsent?: boolean;
     router: Router;
     siteID: number;
     trackerJsFile?: string;
     trackerPhpFile?: string;
     trackerUrl: string;
 }
-export { Parameters_2 as Parameters }
-
-// (No @packageDocumentation comment for this package)
 
 ```
