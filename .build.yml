@@ -1,0 +1,29 @@
+image: alpine/edge
+packages:
+- nodejs
+- npm
+secrets:
+- 7e6c4383-99ec-4063-bb75-04e5afad30d0
+
+sources:
+- git@git.sr.ht:~nicolaskempf57/vitepress-plugin-matomo
+
+tasks:
+- build: |
+    cd ~/vitepress-plugin-matomo
+    node --version
+    npm --version
+    npm ci
+    npm run build
+- publish: |
+    cd ~/vitepress-plugin-matomo
+    set +x
+    echo //registry.npmjs.org/:_auth=$(< ~/NPM_TOKEN) >> .npmrc
+    echo //registry.npmjs.org/:_authToken=$(< ~/NPM_TOKEN) >> .npmrc
+    echo email=nicolas@conciergerie.dev >> .npmrc
+    echo always-auth=true >> .npmrc
+    echo scope=conciergerie-dev >> .npmrc
+    set -x
+    npm version --allow-same-version $(npm view @conciergerie.dev/vitepress-plugin-matomo@latest version)
+    npm run update-version -- prerelease
+    npm run publish-version
