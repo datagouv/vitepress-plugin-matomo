@@ -128,12 +128,12 @@ export default function(parameters: IParameters) {
       }
       _paq.push(['setTrackerUrl', u+trackerPhpFile]);
       _paq.push(['setSiteId', siteID]);
-      const g=document.createElement('script'), s=document.getElementsByTagName('script')[0];
+      const g = document.createElement('script');
       g.type='text/javascript';
       g.async=true;
       g.defer=true;
       g.src=u+trackerJsFile;
-      s.parentNode?.insertBefore(g,s);
+      document.body.insertBefore(g, document.body.firstChild);
     })();
     let existingCallback: typeof router.onAfterRouteChanged;
     if(router.onAfterRouteChanged) {
