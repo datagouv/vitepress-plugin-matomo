@@ -36,6 +36,4 @@ export default {
 
 ## Docs
 
-See the [API report](./docs/api/vitepress-plugin-matomo.api.md) for details about the parameters.
-
-See the [full documentation](./docs/pages/index.md) for the rest.
+See the [documentation](./docs/modules.md) for details about the parameters.
