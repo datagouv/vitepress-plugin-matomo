@@ -114,8 +114,6 @@ export default function(parameters: IParameters) {
         _paq.push(['rememberConsentGiven']);
       }
     }
-    _paq.push(['setDocumentTitle', document.title]);
-    _paq.push(['trackPageView']);
     if (enableLinkTracking) {
       _paq.push(['enableLinkTracking']);
     }
