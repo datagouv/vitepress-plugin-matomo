@@ -114,8 +114,7 @@ export default function(parameters: IParameters) {
         _paq.push(['rememberConsentGiven']);
       }
     }
-    // Tracker methods like "setCustomDimension" should be called before
-    // "trackPageView".
+    _paq.push(['setDocumentTitle', document.title]);
     _paq.push(['trackPageView']);
     if (enableLinkTracking) {
       _paq.push(['enableLinkTracking']);
