@@ -9,6 +9,7 @@
     "types"
   ],
   "types": "./types/main.d.ts",
+  "main": "./dist/vitepress-plugin-matomo.js",
   "module": "./dist/vitepress-plugin-matomo.js",
   "scripts": {
     "start": "npm run dev",
