@@ -1,6 +1,6 @@
-[@conciergerie.dev/vitepress-plugin-matomo](README.md) / Exports
+[@datagouv/vitepress-plugin-matomo](README.md) / Exports
 
-# @conciergerie.dev/vitepress-plugin-matomo
+# @datagouv/vitepress-plugin-matomo
 
 A library to add Matomo tracking to vitepress router.
 
@@ -27,13 +27,6 @@ It requires access to Vitepress router to hook into `onAfterRouteChanged` event.
 
 Load Matomo in your vitepress project.
 
-**`Remarks`**
-
-This is mostly a generalized version of the basic matomo
-tracker code you'd insert in a JS page. However, since vuepress is SSR, it
-requires some special workarounds to make sure paq object storage happens
-correctly.
-
 #### Parameters
 
 | Name | Type |
@@ -44,6 +37,13 @@ correctly.
 
 `void`
 
+**`Remarks`**
+
+This is mostly a generalized version of the basic matomo
+tracker code you'd insert in a JS page. However, since vuepress is SSR, it
+requires some special workarounds to make sure paq object storage happens
+correctly.
+
 #### Defined in
 
-main.ts:87
+[main.ts:87](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L87)

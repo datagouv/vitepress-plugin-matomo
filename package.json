@@ -1,58 +1,51 @@
 {
-  "name": "@conciergerie.dev/vitepress-plugin-matomo",
+  "name": "@datagouv/vitepress-plugin-matomo",
   "version": "1.0.3",
   "type": "module",
   "files": [
     "dist",
+    "docs",
     "src",
     "types"
   ],
   "types": "./types/main.d.ts",
-  "main": "./dist/vitepress-plugin-matomo.umd.cjs",
   "module": "./dist/vitepress-plugin-matomo.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vitepress-plugin-matomo.js",
-      "require": "./dist/vitepress-plugin-matomo.umd.cjs"
-    }
-  },
   "scripts": {
     "start": "npm run dev",
     "dev": "vite",
     "build": "tsc --noEmit && vite build && tsc --declaration --emitDeclarationOnly",
     "docs": "typedoc --plugin typedoc-plugin-markdown --out docs src/main.ts",
     "preview": "vite preview",
-    "preversion": "npm run build && npm run docs",
-    "update-version": "npm version --no-git-tag-version",
+    "preversion": "npm run build && npm run test && npm run docs",
     "publish-version": "npm publish --access public",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
-    "@typescript-eslint/eslint-plugin": "^5.58.0",
-    "@typescript-eslint/parser": "^5.58.0",
-    "@vitest/coverage-c8": "^0.30.1",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vitest/coverage-v8": "^1.5.2",
     "eslint": "^8.38.0",
     "eslint-plugin-tsdoc": "^0.2.17",
     "jsdom": "^21.1.1",
-    "typedoc": "^0.24.4",
-    "typedoc-plugin-markdown": "^3.15.1",
-    "typescript": "^4.9.3",
-    "vite": "^4.2.0",
+    "typedoc": "^0.25.13",
+    "typedoc-plugin-markdown": "^3.17.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
     "vite-plugin-eslint": "^1.8.1",
-    "vitepress": "^1.0.0-alpha.65",
-    "vitest": "^0.30.1"
+    "vitepress": "^1.1.3",
+    "vitest": "^1.5.0"
   },
   "keywords": [
     "vitepress",
     "matomo"
   ],
-  "author": "@nicolaskempf57",
+  "author": "DINUM",
   "license": "MIT",
   "bugs": {
-    "url": "https://todo.sr.ht/~nicolaskempf57/vitepress-plugin-matomo",
-    "email": "~nicolaskempf57/vitepress-plugin-matomo-devel@lists.sr.ht"
+    "url": "https://github.com/datagouv/vitepress-plugin-matomo/issues"
   },
-  "homepage": "https://sr.ht/~nicolaskempf57/vitepress-plugin-matomo/"
+  "homepage": "https://github.com/datagouv/vitepress-plugin-matomo"
 }

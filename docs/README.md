@@ -1,4 +1,4 @@
-@conciergerie.dev/vitepress-plugin-matomo / [Exports](modules.md)
+@datagouv/vitepress-plugin-matomo / [Exports](modules.md)
 
 # Matomo Vitepress Plugin
 

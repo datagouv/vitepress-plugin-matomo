@@ -9,6 +9,7 @@ export default defineConfig({
         lib: {
           // Could also be a dictionary or array of multiple entry points
           entry: resolve(__dirname, 'src/main.ts'),
+          formats: ['es'],
           name: 'VitepressPluginMatomo',
           // the proper extensions will be added
           fileName: 'vitepress-plugin-matomo',
