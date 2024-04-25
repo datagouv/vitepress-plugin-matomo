@@ -46,4 +46,4 @@ correctly.
 
 #### Defined in
 
-[main.ts:87](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L87)
+[main.ts:87](https://github.com/datagouv/vitepress-plugin-matomo/blob/3528aeb0cdd76406f04787e2ac8f07895ffaadac/src/main.ts#L87)
