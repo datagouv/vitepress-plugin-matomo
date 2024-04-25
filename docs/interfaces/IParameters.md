@@ -33,7 +33,7 @@ true
 
 #### Defined in
 
-[main.ts:28](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L28)
+[main.ts:28](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L28)
 
 ___
 
@@ -55,7 +55,7 @@ false
 
 #### Defined in
 
-[main.ts:37](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L37)
+[main.ts:37](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L37)
 
 ___
 
@@ -77,7 +77,7 @@ false
 
 #### Defined in
 
-[main.ts:46](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L46)
+[main.ts:46](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L46)
 
 ___
 
@@ -89,7 +89,7 @@ Vitepress router component
 
 #### Defined in
 
-[main.ts:51](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L51)
+[main.ts:51](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L51)
 
 ___
 
@@ -101,7 +101,7 @@ Matomo numeric site ID of the site you want to track
 
 #### Defined in
 
-[main.ts:56](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L56)
+[main.ts:56](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L56)
 
 ___
 
@@ -119,7 +119,7 @@ Name of the js file to call on the matomo server
 
 #### Defined in
 
-[main.ts:62](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L62)
+[main.ts:62](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L62)
 
 ___
 
@@ -137,7 +137,7 @@ Name of the php file to call on the matomo server
 
 #### Defined in
 
-[main.ts:68](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L68)
+[main.ts:68](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L68)
 
 ___
 
@@ -149,4 +149,4 @@ URL where the piwik.php/piwik.js files can be found
 
 #### Defined in
 
-[main.ts:73](https://github.com/datagouv/vitepress-plugin-matomo/blob/0efd4387cc3beaa14c5f7a55b89703f45b3a74a5/src/main.ts#L73)
+[main.ts:73](https://github.com/datagouv/vitepress-plugin-matomo/blob/9fc9a9dcdcff2ef2c0be43e5f7d87c0edda23308/src/main.ts#L73)
