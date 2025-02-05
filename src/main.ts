@@ -37,6 +37,15 @@ export interface IParameters {
   rememberConsent?: boolean;
 
   /**
+   * Enable client side DoNotTrack detection.
+   * So tracking requests will not be sent if visitors do not wish to be tracked.
+   *
+   *
+   * @defaultValue false
+   */
+  setDoNotTrack?: boolean;
+
+  /**
    * Requires user consent before sending events
    * 
    * @remarks not working right now
@@ -90,6 +99,7 @@ export default function(parameters: IParameters) {
     trackerUrl,
     rememberConsent = false,
     requireConsent = false,
+    setDoNotTrack = false,
     siteID,
     trackerJsFile = "piwik.js",
     trackerPhpFile = "piwik.php",
@@ -116,6 +126,9 @@ export default function(parameters: IParameters) {
     }
     if (enableLinkTracking) {
       _paq.push(['enableLinkTracking']);
+    }
+    if (setDoNotTrack) {
+      _paq.push(["setDoNotTrack", true]);
     }
     (function() {
       let u=trackerUrl;

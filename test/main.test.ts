@@ -71,8 +71,9 @@ test('in production env, matomo script is loaded with additional params', () => 
         siteID,
         trackerUrl,
         requireConsent: true,
-        rememberConsent: true
-    });
+        rememberConsent: true,
+        setDoNotTrack: true,
+        });
     expect(document.documentElement.outerHTML).toContain(trackerUrl);
     expect(window._paq).toBeInstanceOf(Array);
     if(!window._paq) { return;}
@@ -80,6 +81,8 @@ test('in production env, matomo script is loaded with additional params', () => 
     expect(requireConsent).toBeInstanceOf(Array);
     const rememberConsentGiven = window._paq.find(e => e[0] === "rememberConsentGiven");
     expect(rememberConsentGiven).toBeInstanceOf(Array);
+    const setDoNotTrack = window._paq.find(e => e[0] === "setDoNotTrack");
+    expect(setDoNotTrack).toBeInstanceOf(Array);
 });
 
 test('in production env, matomo script is loaded with correct params', () => {
@@ -90,7 +93,8 @@ test('in production env, matomo script is loaded with correct params', () => {
         siteID,
         trackerUrl,
         requireConsent: false,
-        rememberConsent: true
+        rememberConsent: true,
+        setDoNotTrack: false,
     });
     expect(document.documentElement.outerHTML).toContain(trackerUrl);
     expect(window._paq).toBeInstanceOf(Array);
@@ -99,6 +103,8 @@ test('in production env, matomo script is loaded with correct params', () => {
     expect(requireConsent).toBeUndefined();
     const rememberConsentGiven = window._paq.find(e => e[0] === "rememberConsentGiven");
     expect(rememberConsentGiven).toBeUndefined();
+    const setDoNotTrack = window._paq.find(e => e[0] === "setDoNotTrack");
+    expect(setDoNotTrack).toBeUndefined();
 });
 
 test('in production env, after a page change, a new url is tracked', () => {
